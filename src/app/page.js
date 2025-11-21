@@ -14,7 +14,7 @@ import Chers from "./chers";
 export default function Home() {
   return (
     <div>
-      {/* <Header />
+      <Header />
       <Landing />
       <Section />
       <Bast />
@@ -23,8 +23,7 @@ export default function Home() {
       <OffcieM/>
    <Chers/>
       <Meeting/>   <Work/>
-<Footer/> */}
-     <h1>hallo wolrd</h1>
+<Footer/>
      </div>
   );
 }
