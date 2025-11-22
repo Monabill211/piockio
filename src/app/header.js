@@ -171,10 +171,10 @@ const [open, setOpen] = useState(false);
           </div>
           <div>
 <span className="md:hidden">
-  <div className="relative z-40">
+  <div className="relative z-40 text-black">
     <button
       onClick={() => setOpen(!open)}
-      className="hover:text-black flex items-center gap-2 text-2xl font-bold mx-auto"
+      className="hover:text-black flex items-center gap-2 text-2xl font-bold mx-auto text-black"
     >
       <MenuIcon className="text-4xl cursor-pointer" />
     </button>

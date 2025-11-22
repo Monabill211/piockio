@@ -31,7 +31,7 @@ const router = useRouter();
   };
 
   return (
-    <div className="w-[180px] bg-white rounded-2xl shadow-md overflow-hidden text-center pb-4
+    <div className="w-[160px] bg-white rounded-2xl shadow-md overflow-hidden text-center pb-4
      hover:-translate-y-1 transition cursor-pointer">
       <div className="relative">
         <img
