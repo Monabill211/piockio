@@ -146,11 +146,12 @@ const [open, setOpen] = useState(false);
           style={{ padding: "10px" }}
         >
           {/* اللوجو */}
+      
           <div
             className="text-4xl font-bold  text-white pl-2 m-auto"
             style={{ margin: "auto" }}
           >
-            Pic<span className="text-red-500">k</span>io
+              <Link href="/">  Pic<span className="text-red-500">k</span>io</Link>
           </div>
         </div>
         <nav

@@ -56,7 +56,7 @@ src={hovered ? "566f0aa710590159bd183d46308cdd9c.jpg" : img }
       </span>
       <button
         onClick={addToCart}
-        className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 transition w-full h-6 cursor-pointer"
+        className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 transition w-full h-6 cursor-pointer h-100%"
       >
         Add to Cart
       </button>

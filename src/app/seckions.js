@@ -31,11 +31,11 @@ export default function Section() {
       </div>
       <div
         className="flex justify-around pt-8 m-7 flex-wrap"
-        style={{ paddingTop: "30px" }}
+        style={{ paddingTop: "30px",rowGap:"50px" }}
       >
         <Link href="/office" >
-        <div className="w-48 h-72 cursor-pointer hover:text-red-500">
-          <img src="\b321e2485da40c0dde2685c3a4fdcb56.jpg"  className="w-48 h-48"/>
+        <div className="w-36 h-36 cursor-pointer hover:text-red-500">
+          <img src="\b321e2485da40c0dde2685c3a4fdcb56.jpg"  className="w-36 h-36"/>
           <h3
             className="m-1.5 font-bold text-center "
             style={{ paddingTop: "10px", fontSize: "25px" }}
@@ -45,8 +45,8 @@ export default function Section() {
         </div></Link>
                 <Link href="/chers" >
 
-        <div className="w-48 h-52 cursor-pointer hover:text-red-500 ">
-          <img src="\2d6c5cdd96aa4ef98c893b33ac87ddd1.jpg"  className="w-48 h-48" />
+        <div className="w-36 h-36 cursor-pointer hover:text-red-500 ">
+          <img src="\2d6c5cdd96aa4ef98c893b33ac87ddd1.jpg"  className="w-36 h-36" />
           <h3
             className="m-1.5 font-bold text-center "
             style={{ paddingTop: "10px", fontSize: "25px" }}
@@ -57,8 +57,8 @@ export default function Section() {
         </Link>
                 <Link href="/meeting" >
 
-        <div className="w-48 h-52 cursor-pointer hover:text-red-500">
-          <img src="\2e05b2e3931b3ca0e97ea8c0c265b2f5.jpg"  className="w-48 h-48" />
+        <div className="w-36 h-36 cursor-pointer hover:text-red-500">
+          <img src="\2e05b2e3931b3ca0e97ea8c0c265b2f5.jpg"  className="w-36 h-36" />
           <h3
             className="m-1.5 font-bold text-center "
             style={{ paddingTop: "10px", fontSize: "25px" }}
@@ -69,8 +69,8 @@ export default function Section() {
         </Link>
                 <Link href="/work" >
 
-        <div className="w-48 h-52 cursor-pointer hover:text-red-500">
-          <img src="\8c66a679f593e357a693f185e63b5564.jpg" className="w-48 h-48" />
+        <div className="w-36 h-36 cursor-pointer hover:text-red-500">
+          <img src="\8c66a679f593e357a693f185e63b5564.jpg" className="w-36 h-36" />
           <h3
             className="m-1.5 font-bold text-center "
             style={{ paddingTop: "10px", fontSize: "25px" }}
