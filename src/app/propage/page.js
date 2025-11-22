@@ -126,11 +126,11 @@ export default function ProductPage() {
       <motion.button
         key={c.name}
         onClick={() => setSelectedsize(c.name)}
-        className={`w-10 h-10 flex items-center justify-center rounded-full border-2 transition-all duration-200 text-sm font-semibold
+        className={`w-10 h-10 flex items-center justify-center rounded-full border-2 transition-all duration-200 text-sm text-black  font-semibold
           ${
             selectedsize === c.name
-              ? "border-black scale-110 shadow-md bg-gray-200"
-              : "border-gray-300 hover:scale-105 bg-white"
+              ? "border-black scale-110 shadow-md bg-gray-200 text-black "
+              : "border-gray-300 hover:scale-105 bg-white text-black "
           }`}
         whileTap={{ scale: 0.9 }}
       >
@@ -150,18 +150,18 @@ export default function ProductPage() {
 
     <button
       onClick={() => setQuantity(q => (q > 1 ? q - 1 : 1))}
-      className="px-4 py-2 text-lg font-bold hover:bg-gray-200 rounded-l-xl transition"
+      className="px-4 py-2 text-lg font-bold text-black  rounded-l-xl transition"
     >
       - 
     </button>
 
-    <span className="px-4 py-2 text-lg font-semibold min-w-10 text-center">
+    <span className="px-4 py-2 text-lg font-semibold min-w-10 text-center text-black ">
       {quantity}
     </span>
 
     <button
       onClick={() => setQuantity(q => q + 1)}
-      className="px-4 py-2 text-lg font-bold hover:bg-gray-200 rounded-r-xl transition"
+      className="px-4 py-2 text-lg font-bold text-black rounded-r-xl transition"
     >
       +
     </button>
