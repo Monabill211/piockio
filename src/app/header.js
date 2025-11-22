@@ -163,12 +163,15 @@ const [open, setOpen] = useState(false);
           >
             <SearchIcon className="cursor-pointer hover:text-red-500 font-bold fonr-3x1" />
             <LanguageIcon className="cursor-pointer hover:text-red-500 font-bold fonr-3x1" />
+          
             <FavoriteIcon className="cursor-pointer hover:text-red-500 font-bold fonr-3x1" />
-            <ShoppingCartIcon className="cursor-pointer hover:text-red-500 font-bold fonr-3x1" />
+            <Link href="/cart">
+           
+            <ShoppingCartIcon className="cursor-pointer hover:text-red-500 font-bold fonr-3x1" /> </Link>
           </div>
           <div>
 <span className="md:hidden">
-  <div className="relative">
+  <div className="relative z-40">
     <button
       onClick={() => setOpen(!open)}
       className="hover:text-black flex items-center gap-2 text-2xl font-bold mx-auto"
@@ -194,7 +197,7 @@ const [open, setOpen] = useState(false);
     >
       <div className="flex flex-col gap-6 mt-10 text-center">
        <Link href="/">
-       <h1 className="text-black mt-6 font-bold text-6xl" style={{marginTop:"55px"}}>Pic
+       <h1 className="text-black mt-6 font-bold text-6xl" style={{marginTop:"55px",marginBottom:"55px"}}>Pic
         <span className="text-red-600">k</span>io</h1></Link>  
 <span className="flex flex-col">
      <Link href="/office">

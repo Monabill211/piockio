@@ -35,7 +35,7 @@ export default function Section() {
       >
         <Link href="/office" >
         <div className="w-48 h-72 cursor-pointer hover:text-red-500">
-          <img src="\b321e2485da40c0dde2685c3a4fdcb56.jpg"  className="w-52 h-52"/>
+          <img src="\b321e2485da40c0dde2685c3a4fdcb56.jpg"  className="w-48 h-48"/>
           <h3
             className="m-1.5 font-bold text-center "
             style={{ paddingTop: "10px", fontSize: "25px" }}
@@ -46,7 +46,7 @@ export default function Section() {
                 <Link href="/chers" >
 
         <div className="w-48 h-52 cursor-pointer hover:text-red-500 ">
-          <img src="\2d6c5cdd96aa4ef98c893b33ac87ddd1.jpg"  className="w-52 h-52" />
+          <img src="\2d6c5cdd96aa4ef98c893b33ac87ddd1.jpg"  className="w-48 h-48" />
           <h3
             className="m-1.5 font-bold text-center "
             style={{ paddingTop: "10px", fontSize: "25px" }}
@@ -58,7 +58,7 @@ export default function Section() {
                 <Link href="/meeting" >
 
         <div className="w-48 h-52 cursor-pointer hover:text-red-500">
-          <img src="\2e05b2e3931b3ca0e97ea8c0c265b2f5.jpg"  className="w-52 h-52" />
+          <img src="\2e05b2e3931b3ca0e97ea8c0c265b2f5.jpg"  className="w-48 h-48" />
           <h3
             className="m-1.5 font-bold text-center "
             style={{ paddingTop: "10px", fontSize: "25px" }}
@@ -70,7 +70,7 @@ export default function Section() {
                 <Link href="/work" >
 
         <div className="w-48 h-52 cursor-pointer hover:text-red-500">
-          <img src="\8c66a679f593e357a693f185e63b5564.jpg" className="w-52 h-52" />
+          <img src="\8c66a679f593e357a693f185e63b5564.jpg" className="w-48 h-48" />
           <h3
             className="m-1.5 font-bold text-center "
             style={{ paddingTop: "10px", fontSize: "25px" }}

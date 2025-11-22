@@ -31,7 +31,8 @@ const router = useRouter();
   };
 
   return (
-    <div className="w-[185px] bg-white rounded-2xl shadow-md overflow-hidden text-center pb-4 hover:-translate-y-1 transition cursor-pointer">
+    <div className="w-[180px] bg-white rounded-2xl shadow-md overflow-hidden text-center pb-4
+     hover:-translate-y-1 transition cursor-pointer">
       <div className="relative">
         <img
 src={hovered ? "566f0aa710590159bd183d46308cdd9c.jpg" : img }
@@ -46,7 +47,7 @@ src={hovered ? "566f0aa710590159bd183d46308cdd9c.jpg" : img }
         />
       </div>
 
-      <h3 className="text-lg font-bold mt-3">{title}</h3>
+      <h3 className="text-lg font-bold mt-3 text-black font-bold">{title}</h3>
       <p className="text-sm text-gray-600 px-3 mb-2 text-end">{desc}</p>
 
       <span className="text-base font-bold text-gray-800">
@@ -55,7 +56,7 @@ src={hovered ? "566f0aa710590159bd183d46308cdd9c.jpg" : img }
       </span>
       <button
         onClick={addToCart}
-        className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 transition w-full h-8 cursor-pointer"
+        className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 transition w-full h-6 cursor-pointer"
       >
         Add to Cart
       </button>
