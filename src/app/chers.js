@@ -23,6 +23,8 @@ export default function Chers(){
                    title="كرسي"
                    desc="كرسي مكتب مدير"
                    price="90000"
+                                          absolute="جاهز"
+
                    style={{ paddingTop: "50px" }}
                  />
             <ProductCard
@@ -31,6 +33,8 @@ export default function Chers(){
                    title="كرسي"
                    desc="كرسي موظف بالوان مختلفة"
                    price="2000"
+                                          absolute="جاهز"
+
                    style={{ paddingTop: "50px" }}
                  />
           <ProductCard
@@ -39,6 +43,9 @@ export default function Chers(){
                    title="كرسي"
                    desc="كرسي موظف بالوان مختلفة"
                  price="80000"
+                                          absolute="جاهز"
+
+
                  style={{ paddingTop: "50px" }}
                />
             <ProductCard
@@ -47,6 +54,8 @@ export default function Chers(){
                    title="كرسي"
                    desc="كرسي مكتب مدير"
                    price="2000"
+                                          absolute="جاهز"
+
                    style={{ paddingTop: "50px" }}
                  />
            <ProductCard
@@ -55,6 +64,8 @@ export default function Chers(){
                    title="كرسي"
                    desc="كرسي موظف بالوان مختلفة"
                   price="1000"
+                                         absolute="جاهز"
+
                   style={{ paddingTop: "50px" }}
                 />
         

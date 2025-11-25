@@ -6,11 +6,15 @@ import { Fancybox } from "@fancyapps/ui";
 import { motion, AnimatePresence } from "framer-motion";
 import Header from "../header";
 import Footer from "../footer";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+
 
 export default function ProductPage() {
   const [selectedColor, setSelectedColor] = useState("red");
   const [selectedsize, setSelectedsize] = useState("120");
   const [quantity, setQuantity] = useState(1);
+    const [open, setOpen] = useState(false);
+
 
 
   const colors = [
@@ -46,6 +50,29 @@ export default function ProductPage() {
   const product = colors.find((c) => c.name === selectedColor);
   const productsize = size.find((c) => c.name === selectedsize);
 
+ const minDays = 10;
+const maxDays = 80;
+
+const today = new Date();
+
+// حساب تاريخ الـ 20 يوم
+const startDate = new Date();
+startDate.setDate(today.getDate() + minDays);
+
+// حساب تاريخ الـ 25 يوم
+const endDate = new Date();
+endDate.setDate(today.getDate() + maxDays);
+
+// تنسيق التاريخ العربي
+const startFormatted = startDate.toLocaleDateString("ar-EG", {
+  day: "numeric",
+  month: "long",
+});
+
+const endFormatted = endDate.toLocaleDateString("ar-EG", {
+  day: "numeric",
+  month: "long",
+});
   return (
     <>
     
@@ -83,6 +110,12 @@ export default function ProductPage() {
             />
           </motion.a>
         </AnimatePresence>
+         <div class="absolute bottom-3 left- w-14 text-center">
+  <div class="relative bg-red-600/50 text-white font-bold text-sm px-3 py-1 rounded-md backdrop-blur-sm">
+<h1>جاهز</h1>
+    
+  </div>
+</div>
       </div>
 
       {/* التفاصيل */}
@@ -97,6 +130,50 @@ export default function ProductPage() {
         </div>
 
       
+<div className="w-full max-w-md mt-5 text-center">
+      {/* زرار الفتح */}
+      <button
+        onClick={() => setOpen(!open)}
+        className="flex items-center gap-3 bg-gray-100 p-3 rounded-lg hover:bg-gray-200 transition w-full"
+      >
+        <LocalShippingIcon style={{ color: "#d32f2f", fontSize: "28px" }} />
+               <span className="font-semibold text-gray-800">
+<p>التسليم من {startFormatted} إلى {endFormatted}</p>
+        </span> 
+      </button>
+
+      {/* محتوى التفاصيل */}
+      {open && (
+        <div
+          className="mt-3 bg-white p-4 rounded-lg shadow animate-[slideDown_0.3s_ease-out]"
+        >
+          <h3 className="text-lg font-bold mb-2 text-red-600 ">
+تفاصيل مدة التسليم : يبدأ الوقت من تاريخ إكمال التعاقد 
+          </h3>
+
+          <ul className="space-y-2 text-gray-700 leading-relaxed">
+            <li> يومين: تجهيز الديزاين</li>
+            <li> 5 أيام: تجهيز الخامة المستخدمة</li>
+            <li> 10 أيام: التصنيع</li>
+            <li> 5 أيام: الدهان</li>
+            <li> يوم واحد: مراجعة الجودة</li>
+            <li> يومين: تجهيز مع شركة الشحن</li>
+          </ul>
+
+          <p className="mt-3 text-gray-900 font-semibold">
+          الوقت بيكون مناسب معك حسب ظروفك   .
+          </p>
+        </div>
+      )}
+
+      {/* Animation */}
+      <style>{`
+        @keyframes slideDown {
+          0% { opacity: 0; transform: translateY(-5px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
+    </div>
 
         {/* اختيار اللون */}
         <div>
@@ -136,7 +213,7 @@ export default function ProductPage() {
       >
         {c.name}
       </motion.button>
-    ))}
+    ))} 
   </div>
 </div>
 

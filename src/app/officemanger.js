@@ -23,6 +23,8 @@ export default function OffcieM(){
                    title="مكتب"
                    desc="مكتب مدير"
                    price="20000"
+                                                                 absolute="تصنيع"
+
                    style={{ paddingTop: "50px" }}
                  />
             <ProductCard
@@ -31,6 +33,8 @@ export default function OffcieM(){
                    title="مكتب"
                    desc="مكتب مدير"
                    price="80000"
+                                                                 absolute="تصنيع"
+
                    style={{ paddingTop: "50px" }}
                  />
           <ProductCard
@@ -39,6 +43,8 @@ export default function OffcieM(){
                  title="مكتب"
                  desc="مكتب مدير"
                  price="12000"
+                                                               absolute="تصنيع"
+
                  style={{ paddingTop: "50px" }}
                />
             <ProductCard
@@ -47,6 +53,8 @@ export default function OffcieM(){
                    title="مكتب"
                    desc="مكتب مدير"
                    price="10000"
+                                                                 absolute="تصنيع"
+
                    style={{ paddingTop: "50px" }}
                  />
            <ProductCard
@@ -55,6 +63,8 @@ export default function OffcieM(){
                   title="مكتب"
                   desc="مكتب مدير"
                   price="90000"
+                                                                absolute="تصنيع"
+
                   style={{ paddingTop: "50px" }}
                 />
         

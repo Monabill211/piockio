@@ -37,22 +37,28 @@ export default function Bast() {
                title="مكتب"
                desc="مكتب مدير"
                price="10000"
+                                                             absolute="تصنيع"
+
                style={{ paddingTop: "50px" }}
              />
         <ProductCard
                id="1"
                img="\2d6c5cdd96aa4ef98c893b33ac87ddd1.jpg"
-               title="مكتب"
-               desc="مكتب مدير"
-               price="10000"
+               title="كرسي"
+               desc=" كرسي مدير"
+               price="5200"
+                                                             absolute="جاهز"
+
                style={{ paddingTop: "50px" }}
              />
       <ProductCard
              id="1"
              img="\2e05b2e3931b3ca0e97ea8c0c265b2f5.jpg"
-             title="مكتب"
-             desc="مكتب مدير"
-             price="10000"
+             title="طربيزت اجتماعات"
+             desc="طربيزات اجتماعات  "
+             price="120000"
+                                                           absolute="تصنيع"
+
              style={{ paddingTop: "50px" }}
            />
         <ProductCard
@@ -61,6 +67,8 @@ export default function Bast() {
                title="مكتب"
                desc="مكتب مدير"
                price="10000"
+                                                             absolute="تصنيع"
+
                style={{ paddingTop: "50px" }}
              />
        <ProductCard
@@ -69,6 +77,8 @@ export default function Bast() {
               title="مكتب"
               desc="مكتب مدير"
               price="10000"
+                                                            absolute="تصنيع"
+
               style={{ paddingTop: "50px" }}
             />
     

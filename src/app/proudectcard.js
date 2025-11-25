@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 
 
-export default function ProductCard({ id, title, desc, price, img }) {
+export default function ProductCard({ id, title, desc, price, img,absolute }) {
   const [hovered, setHovered] = useState(false);
   const [fav, setFav] = useState(false);
 const router = useRouter();
@@ -45,6 +45,14 @@ src={hovered ? "566f0aa710590159bd183d46308cdd9c.jpg" : img }
             fav ? "text-red-500" : "text-gray-400"
           }`}
         />
+      <div class="absolute top-3 left-0 w-10">
+  <div class="relative bg-red-600/50 text-white font-bold text-sm px-3 py-1 rounded-r-md backdrop-blur-sm">
+{absolute}
+    
+  </div>
+</div>
+
+
       </div>
 
       <h3 className="text-lg font-bold mt-3 text-black font-bold">{title}</h3>
